@@ -22,10 +22,12 @@ export default function RealtorLanding() {
       <div style={{ maxWidth: "900px", width: "100%", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2rem" }}>
         <div style={{ textAlign: "center" }}>
           <img
-            src="https://drive.google.com/uc?export=view&id=1O8VZg6NpdMRXV02taBOOSFXshxSdlg4J"
-            alt="Luisa Bustamante"
-            style={{ width: "220px", height: "220px", objectFit: "cover", borderRadius: "30px", border: `4px solid ${ACCENT}` }}
+            src="/luisa.jpg"
+            alt="Luisa Bustamante - Realtor in Austin, TX"
+            loading="eager"
+            style={{ width: 220, height: 220, objectFit: "cover", borderRadius: 28, border: "4px solid #D0A17A" }}
           />
+
           <h1 style={{ fontSize: "2rem", marginTop: "1rem" }}>Luisa Bustamante</h1>
           <p style={{ color: ACCENT, fontSize: "1.1rem" }}>REALTOR® · Austin, TX</p>
           <div style={{ marginTop: "1.5rem", display: "flex", justifyContent: "center", gap: "1rem" }}>

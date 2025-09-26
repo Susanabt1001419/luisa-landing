@@ -61,8 +61,7 @@ export default function RealtorLanding() {
         <section className="card">
           <h2>Message me</h2>
           <p>
-            Leave your details and I’ll personally reach out to help you buy or sell your home in Austin and surrounding areas. 
-            I specialize in guiding families and investors through every step of the real estate process{" "}
+            Let’s connect! I’ll help families and investors buy or sell in Austin.{" "}
             <span style={{ color: ACCENT }}>buy or sell</span> your home in Austin.
           </p>
 

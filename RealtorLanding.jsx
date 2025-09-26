@@ -61,7 +61,7 @@ export default function RealtorLanding() {
         <section className="card">
           <h2>Message me</h2>
           <p>
-            Let’s connect! I’ll help families and investors <span style={{ color: ACCENT }}>buy or sell</span> in Austin.{" "}
+            Let’s connect! I help families and investors <span style={{ color: ACCENT }}>buy or sell</span> in Austin and surrounding areas.{" "}
           </p>
 
           <form className="form" onSubmit={onSubmit}>

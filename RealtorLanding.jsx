@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaInstagram, FaPhoneAlt, FaWhatsapp } from "react-icons/fa"; // 👈 Import de íconos
 
 const ACCENT = "#D0A17A";
 
@@ -33,10 +34,26 @@ export default function RealtorLanding() {
               href="https://www.instagram.com/luisa.realtor.atx/"
               target="_blank"
               rel="noopener noreferrer"
+              style={{ display: "flex", alignItems: "center", gap: "6px", color: ACCENT }}
             >
-              Instagram
+              <FaInstagram size={18} /> Instagram
             </a>
-            <a href="tel:+13059705104">Call</a>
+
+            <a
+              href="tel:+13059705104"
+              style={{ display: "flex", alignItems: "center", gap: "6px", color: ACCENT }}
+            >
+              <FaPhoneAlt size={16} /> Call
+            </a>
+
+            <a
+              href="https://wa.me/13059705104"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "flex", alignItems: "center", gap: "6px", color: ACCENT }}
+            >
+              <FaWhatsapp size={18} /> WhatsApp
+            </a>
           </nav>
         </section>
 
@@ -44,7 +61,8 @@ export default function RealtorLanding() {
         <section className="card">
           <h2>Message me</h2>
           <p>
-            Leave your details and I’ll personally reach out to help you buy or sell your home in Austin and surrounding areas. I specialize in guiding families and investors through every step of the real estate process{" "}
+            Leave your details and I’ll personally reach out to help you buy or sell your home in Austin and surrounding areas. 
+            I specialize in guiding families and investors through every step of the real estate process{" "}
             <span style={{ color: ACCENT }}>buy or sell</span> your home in Austin.
           </p>
 
@@ -88,4 +106,5 @@ export default function RealtorLanding() {
     </div>
   );
 }
+
 

@@ -62,7 +62,7 @@ export default function RealtorLanding() {
           <h2>Message me</h2>
           <p>
             Let’s connect! I’ll help families and investors buy or sell in Austin.{" "}
-            <span style={{ color: ACCENT }}>buy or sell</span> your home in Austin.
+            <span style={{ color: ACCENT }}>buy or sell</span>
           </p>
 
           <form className="form" onSubmit={onSubmit}>

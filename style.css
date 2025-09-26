@@ -1,6 +1,64 @@
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: black;
-  color: white;
+:root{
+  --accent:#D0A17A; --bg:#000; --panel:#111; --text:#fff; --muted:#ccc;
 }
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+  background:var(--bg); color:var(--text);
+}
+
+/* Layout base (móvil primero) */
+.container{min-height:100vh;display:grid;place-items:center;padding:20px}
+.grid{width:100%;max-width:960px;display:grid;grid-template-columns:1fr;gap:20px}
+
+/* ≥ 880px: 2 columnas */
+@media (min-width:880px){
+  .grid{grid-template-columns:1fr 1fr;gap:32px}
+}
+
+/* Marca */
+.brand{text-align:center}
+.brand img{
+  display:block;
+  width:200px; height:200px; max-width:80vw;
+  object-fit:cover; border-radius:28px; border:4px solid var(--accent);
+  margin:0 auto;
+}
+@media (min-width:480px){
+  .brand img{width:220px;height:220px}
+}
+
+.brand h1{font-size:clamp(1.6rem,6vw,2.6rem);margin:16px 0 6px}
+.brand .role{color:var(--accent);font-size:1rem;margin:4px 0 16px}
+
+.actions{
+  margin-top:8px; display:flex; justify-content:center; gap:16px; flex-wrap:wrap
+}
+.actions a{color:var(--accent);text-decoration:underline;font-weight:600}
+
+/* Card/form */
+.card{background:var(--panel);border:1px solid #333;border-radius:14px;padding:16px}
+@media (min-width:480px){ .card{padding:20px} }
+
+.card h2{font-size:1.4rem;margin:0 0 6px}
+.card p{color:var(--muted);font-size:0.95rem;margin:6px 0 14px;line-height:1.45}
+
+.form{display:grid;gap:10px}
+.input,.textarea,.button{
+  width:100%; border-radius:10px; border:1px solid #333;
+  background:#0a0a0a; color:var(--text); font-size:1rem; padding:14px 12px;
+}
+.input,.textarea{min-height:48px}
+.textarea{min-height:120px;resize:vertical}
+
+.button{
+  background:var(--accent); color:#000; font-weight:800; border:none; cursor:pointer;
+  min-height:52px; letter-spacing:.2px;
+}
+
+.helper{text-align:center;color:#aaa;font-size:.85rem;margin-top:4px}
+
+.safe-bottom{padding-bottom:env(safe-area-inset-bottom,0)}
+

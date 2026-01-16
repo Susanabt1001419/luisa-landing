@@ -40,14 +40,14 @@ export default function RealtorLanding() {
             </a>
 
             <a
-              href="tel:+13059705104"
+              href="tel:+15129109496"
               style={{ display: "flex", alignItems: "center", gap: "6px", color: ACCENT }}
             >
               <FaPhoneAlt size={16} /> Call
             </a>
 
             <a
-              href="https://wa.me/13059705104"
+              href="https://wa.me/15129109496"
               target="_blank"
               rel="noopener noreferrer"
               style={{ display: "flex", alignItems: "center", gap: "6px", color: ACCENT }}

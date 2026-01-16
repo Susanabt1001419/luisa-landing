@@ -47,7 +47,7 @@ export default function RealtorLanding() {
             </a>
 
             <a
-              href="https://wa.me/15129109496"
+              href="https://wa.me/13059705104"
               target="_blank"
               rel="noopener noreferrer"
               style={{ display: "flex", alignItems: "center", gap: "6px", color: ACCENT }}
@@ -95,7 +95,7 @@ export default function RealtorLanding() {
             <div className="helper">
               Or text me directly at{" "}
               <a href="sms:+13059705104" style={{ color: ACCENT }}>
-                +1 (305) 970-5104
+                +1 (512) 910-9496
               </a>.
             </div>
           </form>
